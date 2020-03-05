@@ -20,7 +20,7 @@ requirements:
   host:
     - pbr
     - pip
-    - python
+    - python >3
     - setuptools
   run:
     - babel
@@ -28,8 +28,8 @@ requirements:
     - oslo.i18n
     - oslo.utils
     - pbr
-    - prettytable <0.8,>=0.7.1
-    - python
+    - prettytable
+    - python >3
     - requests
     - setuptools
     - simplejson
