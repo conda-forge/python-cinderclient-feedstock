@@ -1,18 +1,18 @@
 {% set name = "python-cinderclient" %}
-{% set version = "6.0.0" %}
+{% set version = "7.0.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 48f5a0df0983bd06c0c870b728f2952a3fe4b67a4dc0031afaef0536e829d097
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: ff5cd2f28dd7558a7244d4072e472ae5d9a6b180158e26586a6312624cd1ec14
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - cinder = cinderclient.shell:main
 
@@ -44,7 +44,7 @@ about:
   license: Apache Software
   license_family: APACHE
   license_file: LICENSE
-  summary: "OpenStack Block Storage API Client Library"
+  summary: OpenStack Block Storage API Client Library
   doc_url: https://docs.openstack.org/python-cinderclient/latest/
   dev_url: https://opendev.org/openstack/python-cinderclient
 
