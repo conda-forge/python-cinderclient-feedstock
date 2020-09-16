@@ -20,20 +20,18 @@ requirements:
   host:
     - pbr
     - pip
-    - python >3
-    - setuptools
+    - python >=3.6
   run:
-    - babel
-    - keystoneauth1
-    - oslo.i18n
-    - oslo.utils
     - pbr
     - prettytable
-    - python >3
-    - requests
-    - setuptools
+    - keystoneauth1
     - simplejson
     - six
+    - oslo.i18n
+    - oslo.utils
+    - python >=3.6
+    - requests
+    - stevedore
 
 test:
   imports:
