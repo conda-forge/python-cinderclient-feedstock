@@ -5,11 +5,13 @@ Home: https://docs.openstack.org/python-cinderclient/latest/
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-cinderclient-feedstock/blob/master/LICENSE.txt)
 
 Summary: OpenStack Block Storage API Client Library
 
+Development: https://opendev.org/openstack/python-cinderclient
 
+Documentation: https://docs.openstack.org/python-cinderclient/latest/
 
 Current build status
 ====================
