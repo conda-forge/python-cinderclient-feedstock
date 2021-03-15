@@ -23,15 +23,14 @@ requirements:
     - python >=3.6
   run:
     - pbr
-    - prettytable
-    - keystoneauth1
-    - simplejson
-    - six
-    - oslo.i18n
-    - oslo.utils
+    - prettytable >=0.7.2
+    - keystoneauth1 >=4.3.1
+    - simplejson >=3.5.1
+    - oslo.i18n >=5.0.1
+    - oslo.utils >=4.8.0
     - python >=3.6
-    - requests
-    - stevedore
+    - requests >=2.25.1
+    - stevedore >=3.3.0
 
 test:
   imports:
