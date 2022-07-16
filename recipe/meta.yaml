@@ -1,5 +1,5 @@
 {% set name = "python-cinderclient" %}
-{% set version = "8.3.0" %}
+{% set version = "9.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e00103875029dc85cbb59131d00ccc8534f692956acde32b5a3cc5af4c24580b
+  sha256: a2257ab22da4472449ddc752551341226da2bfc16b67d9869cdeaf45ba86bfaa
 
 build:
   number: 0
@@ -20,7 +20,7 @@ requirements:
   host:
     - pbr
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
     - pbr
     - prettytable >=0.7.2
@@ -28,7 +28,7 @@ requirements:
     - simplejson >=3.5.1
     - oslo.i18n >=5.0.1
     - oslo.utils >=4.8.0
-    - python >=3.6
+    - python >=3.8
     - requests >=2.25.1
     - stevedore >=3.3.0
 
