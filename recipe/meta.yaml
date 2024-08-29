@@ -21,6 +21,7 @@ requirements:
     - pbr
     - pip
     - python >=3.8
+    - setuptools
   run:
     - pbr
     - prettytable >=0.7.2
