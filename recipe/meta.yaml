@@ -1,5 +1,5 @@
 {% set name = "python-cinderclient" %}
-{% set version = "9.7.0" %}
+{% set version = "9.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 18c4501e549677984d85b0b10fd074efbd265e30add2a796d28176055a8d7dcf
+  sha256: bd3ee9f9487c5e79957f018a6b3f2dece7059dad8f6155d83dd4b6eb9447a11d
 
 build:
   number: 0
