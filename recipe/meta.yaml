@@ -1,13 +1,13 @@
 {% set name = "python-cinderclient" %}
-{% set version = "9.9.0" %}
+{% set version = "9.10.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 697e4d12c249f39b41ecf4fa6fcb8c38cbf2d6b2d84d6f515ed567b82dcd0bd1
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: fb856e6f4382a4c84d82f00415e3c66514b73e12d94679935182ba4f86510916
 
 build:
   number: 0
